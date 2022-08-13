@@ -1,18 +1,18 @@
 # MySQL安装建议：  
 ## 方法1:
-1. [b站MySQL3小时入门教程] [https://www.bilibili.com/video/BV1PT4y1e7UU?spm_id_from=333.337.search-card.all.click&vd_source=4a72f95e2a1694bfd8c010db6a72530d]  
+1. [b站MySQL3小时入门教程](https://www.bilibili.com/video/BV1PT4y1e7UU?spm_id_from=333.337.search-card.all.click&vd_source=4a72f95e2a1694bfd8c010db6a72530d)  
 > PS.视频开头附带了安装过程以及安装链接(.msi文件安装)，但是可能会由于多次安装或者各种系统问题导致安装失败，可以参考方法2.  
   
   
 ## 方法2：  
 
-2. [Mysql下载安装和配置方法(看了必成功)] [https://www.bilibili.com/video/BV1EJ411p7Ty?spm_id_from=333.788.top_right_bar_window_history.content.click]  
+2. [Mysql下载安装和配置方法(看了必成功)](https://www.bilibili.com/video/BV1EJ411p7Ty?spm_id_from=333.788.top_right_bar_window_history.content.click)    
 > PS.安装包下载法，并且非常详细的介绍了环境变量等配置  
-[图形化管理工具MySQL workbench] [https://dev.mysql.com/downloads/workbench/]  
+[图形化管理工具MySQL workbench](https://dev.mysql.com/downloads/workbench/)    
 
 **视频文字概况：**  
 
-第一步：去官网下载安装 [https://dev.mysql.com/downloads/] 
+第一步：去官网下载安装 [mysql.com](https://dev.mysql.com/downloads/)   
 
 第二步：先解压，然后在mysql下创建一个my.ini文件，更改my.ini文件里面的前两行安装目录（详细可见项目中文件my.ini），  
 第二行加上\data，my.ini文件不能多一个符号或者少一个符号，在path（环境变量里面）加上mysql路径（E:\mysql\mysql-8.0.25-winx64\bin）(填写自己的mysql安装路径)  
