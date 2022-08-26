@@ -14,21 +14,32 @@
 
 第一步：去官网下载安装 [mysql.com](https://dev.mysql.com/downloads/)   
 
-第二步：先解压，然后在mysql下创建一个my.ini文件，更改my.ini文件里面的前两行安装目录（详细可见项目中文件my.ini），  
+第二步：先解压，然后在mysql下创建一个my.ini文件，更改my.ini文件里面的前两行安装目录（详细可见项目中文件 [my.ini](https://github.com/cn666278/MySQL/blob/main/my.ini)），  
 第二行加上\data，my.ini文件不能多一个符号或者少一个符号，在path（环境变量里面）加上mysql路径（E:\mysql\mysql-8.0.25-winx64\bin）(填写自己的mysql安装路径)  
 
 第三步：进入命令指示符（管理员模式下运行cmd）,  
-输入mysqld --initialize-insecure --user=mysql,初始化数据库，并设置默认root为空，初始化完成后，在mysql根目录中会自动生成data文件  
-再输入mysqld -install,为windows安装mysql服务，默认服务名为mysql  
-出现service successfully installed.表示配置完成  
-启动数据库net start mysql,  
-输入mysql -u root -p ,不用输入密码直接回车  
-出现mysql>配置完成  
-输入(alter user user() identified by "密码";)  
-mysql退出 mysql>quit;  
-输入net stop mysql关闭数据库  
+初始化数据库，并设置默认root为空，初始化完成后，在mysql根目录中会自动生成data文件  
+> mysqld --initialize-insecure --user=mysql  
 
-PS.
+为windows安装mysql服务，默认服务名为mysql(出现service successfully installed.表示配置完成)    
+> mysqld -install  
+  
+启动数据库  
+> net start mysql,  
+> mysql -u root -p ,不用输入密码直接回车  
+出现mysql>配置完成  
+
+输入
+> alter user user() identified by "密码";  
+
+mysql退出 
+> mysql>quit;  
+
+关闭数据库  
+> net stop mysql  
+
+
+**PS.**
 1. 使用方法2安装好MySQL server之后，需要去MySQL workbench修改server设置  
 如图：  
 
