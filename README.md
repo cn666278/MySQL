@@ -21,8 +21,10 @@
 初始化数据库，并设置默认root为空，初始化完成后，在mysql根目录中会自动生成data文件  
 > mysqld --initialize-insecure --user=mysql  
 
-为windows安装mysql服务，默认服务名为mysql(出现service successfully installed.表示配置完成)    
+为windows安装mysql服务，默认服务名为mysql      
 > mysqld -install  
+> 出现service successfully installed.表示配置完成  
+
   
 启动数据库  
 > net start mysql,  
